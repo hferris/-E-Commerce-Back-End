@@ -43,12 +43,18 @@ router.post('/', async(req, res) => {
 router.put('/:id', async(req, res) => {
   // update a category by its `id` value
   try {
-    const catData = await Category.update(req.body);
+    const catData = await  Category.update(req.body.category_name,{
+      where: {
+        id: req.params.id,
+      },
+    })
+  
+      
     res.status(200).json(catData);
   } catch (error) {
     res.status(400).json(err);
+  
   }
-
 });
 
 router.delete('/:id', async(req, res) => {
