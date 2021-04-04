@@ -1,6 +1,6 @@
 # -E-Commerce-Back-End
 # Check it out here: https://github.com/hferris/-E-Commerce-Back-End 
-# Check it out here: YouTube Link (here)
+# Check it out here: https://youtu.be/-2Wdv9mPjHY
 # Here is the screenshot below :star_struck:
 ![Alt text](./imgs/ScreenShot.png?raw=true "Screenshot").
 
