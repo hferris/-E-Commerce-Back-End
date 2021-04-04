@@ -20,7 +20,7 @@ router.get('/:id', async(req, res) => {
   // find a single tag by its `id`
   // be sure to include its associated Product data
   try {
-    const tagdata = await Category.findByPk(req. params.id, {
+    const tagdata = await Tag.findByPk(req. params.id, {
       include: [{ model: Product}],
   })
   res.status(200).json(tagdata);
@@ -42,10 +42,17 @@ router.post('/', async(req, res) => {
 router.put('/:id', async(req, res) => {
   // update a tag's name by its `id` value
   try {
-    const tagData = await Tag.update(req.body);
+    const tagData = await  Tag.update(req.body,{
+      where: {
+        id: req.params.id,
+      },
+    })
+  
+      
     res.status(200).json(tagData);
   } catch (error) {
     res.status(400).json(err);
+  
   }
 });
 

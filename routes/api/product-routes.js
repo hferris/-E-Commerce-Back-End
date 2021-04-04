@@ -9,7 +9,15 @@ router.get('/', async(req, res) => {
   // be sure to include its associated Category and Tag data
   try {
     const productdata = await Product.findAll({
-      include: [Tag]
+      include: [
+        {
+          model: Tag,
+        },
+        {
+          model: Category,
+        }
+      
+      ]
 });
     res.status(200).json(productdata);
   } catch (error) {
@@ -66,7 +74,7 @@ router.post('/', async(req, res) => {
 // update product
 router.put('/:id', async(req, res) => {
   // update product data
- Product.update(req.body.product_name,{
+ Product.update(req.body,{
     where: {
       id: req.params.id,
     },
