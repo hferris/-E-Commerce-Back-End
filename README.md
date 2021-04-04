@@ -15,7 +15,7 @@ This application is a mysql database and application the backend for an e-commer
 * [Questions](#questions)
 
 ## Usage
-* [Testing Video](youtube link)
+* [Testing Video](https://youtu.be/-2Wdv9mPjHY)
 
 ## Questions
 If you have any questions about the repo, please contact me directly at hferris@dbq.edu or find me on github at https://github.com/hferris.
