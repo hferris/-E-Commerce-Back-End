@@ -2,7 +2,7 @@
 # Check it out here: https://github.com/hferris/-E-Commerce-Back-End 
 # Check it out here: YouTube Link (here)
 # Here is the screenshot below :star_struck:
-<!-- ![Alt text](./public/assets/imgs/snap-shot.png?raw=true "Screenshot"). -->
+![Alt text](./imgs/ScreenShot.png?raw=true "Screenshot").
 
 
 # Description
